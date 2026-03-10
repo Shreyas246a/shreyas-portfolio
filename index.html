@@ -1,104 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shreyas | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyas Anchatageri — Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <h1>Shreyas's Portfolio</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">SA<span class="dot">.</span></div>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+      <a href="mailto:shreyas246anchatgeri@gmail.com" class="nav-cta">Hire Me →</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-  <!-- Hero Section -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <!-- Profile Picture -->
-    <img src="https://i.ibb.co/yFpSDjqY/1706876098366.jpg" alt="Shreyas Profile" class="profile-img">
-
-    <div class="hero-text">
-      <h2>Hi, I'm Shreyas 👋</h2>
-      <p>Full Stack Developer | DevOps Enthusiast</p>
-      <p class="tagline">Building scalable apps & automating deployments 🚀</p>
-      
-      <div class="hero-buttons">
-        <a href="#projects" class="btn">View My Work</a>
-        <a href="https://drive.google.com/file/d/1TA-JpQ0ooy4ogaucYIorHvh0w_S1Ez65/view?usp=sharing" download class="btn">Download Resume</a>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title">
+          Shreyas<br />
+          <em>Anchatageri</em>
+        </h1>
+        <p class="hero-desc">
+          Software Developer specialising in <strong>Java &amp; Spring Boot</strong> backend systems and <strong>MERN stack</strong> web applications. I build reliable, production-ready software with a keen eye for clean architecture.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/Shreyas246a" target="_blank" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/shreyas-anchatageri" target="_blank" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
       </div>
-
-      <!-- Skills Row -->
-      <div class="skills">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" />
+      <div class="hero-card">
+        <div class="card-avatar">SA</div>
+        <div class="card-name">Shreyas Anchatageri</div>
+        <div class="card-role">Software Developer · Full-Stack · DevOps</div>
+        <div class="card-divider"></div>
+        <div class="card-facts">
+          <div class="card-fact"><span class="fact-label">Status</span><span class="fact-value"><span class="fact-dot"></span>Available</span></div>
+          <div class="card-fact"><span class="fact-label">Education</span><span class="fact-value">B.E. CSE · 8.6 CGPA</span></div>
+          <div class="card-fact"><span class="fact-label">Location</span><span class="fact-value">Hubballi, Karnataka</span></div>
+          <div class="card-fact"><span class="fact-label">Focus</span><span class="fact-value">Backend &amp; Full-Stack</span></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m passionate about building full-stack applications and learning cloud & DevOps.</p>
   </section>
 
-  <!-- Projects -->
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">About Me</div>
+        <h2 class="section-title">Building reliable software,<br /><em>one layer at a time.</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p>I'm a <strong>motivated Software Developer</strong> who recently graduated with a B.E. in Computer Science (CGPA: 8.6) from Jain College of Engineering &amp; Technology, Hubballi. My core strength lies in <strong>backend development</strong> — designing clean REST APIs, implementing secure authentication flows, and structuring applications for long-term maintainability.</p>
+          <p>I've worked hands-on with the full product lifecycle — writing business logic in <strong>Spring Boot</strong>, connecting it to relational databases like <strong>MySQL</strong>, and building frontends with <strong>React</strong>. I also have practical exposure to containerising apps with <strong>Docker</strong> and setting up automated build pipelines.</p>
+          <p>I'm a quick learner with a collaborative mindset, currently deepening my skills in <strong>backend microservices</strong> through training at KodNest. I'm eager to contribute to a team where I can grow alongside real production challenges.</p>
+        </div>
+        <div class="about-highlights reveal">
+          <div class="highlight-card">
+            <div class="highlight-icon">🔐</div>
+            <div>
+              <h4>Secure Backend Systems</h4>
+              <p>Experienced in JWT auth, Spring Security, and layered REST API architecture.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🌐</div>
+            <div>
+              <h4>Full-Stack Capable</h4>
+              <p>From React frontends to Node/Express backends — comfortable across the stack.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🐳</div>
+            <div>
+              <h4>DevOps Exposure</h4>
+              <p>Hands-on with Docker, Jenkins &amp; AWS EC2 from internship and real project work.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">📚</div>
+            <div>
+              <h4>Always Learning</h4>
+              <p>Currently in full-stack training; holds 3 industry certifications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="bg-surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Skills</div>
+        <h2 class="section-title">Technologies I work with</h2>
+        <p class="section-sub">Focused on backend engineering and full-stack web development, with practical DevOps exposure.</p>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-group-head"><div class="skill-icon">☕</div><span>Languages</span></div>
+          <div class="chips"><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">C</span><span class="chip">C++</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><div class="skill-icon">⚡</div><span>Frontend</span></div>
+          <div class="chips"><span class="chip">ReactJS</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span><span class="chip">Tailwind</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><div class="skill-icon">🛠️</div><span>Backend &amp; Databases</span></div>
+          <div class="chips"><span class="chip">Spring Boot</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">REST APIs</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><div class="skill-icon">🐳</div><span>DevOps &amp; Cloud</span></div>
+          <div class="chips"><span class="chip">Docker</span><span class="chip">Jenkins</span><span class="chip">AWS EC2</span><span class="chip">Kubernetes</span><span class="chip">GitHub</span><span class="chip">CI/CD</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><div class="skill-icon">🧠</div><span>Concepts</span></div>
+          <div class="chips"><span class="chip">OOP</span><span class="chip">DSA</span><span class="chip">Spring Security</span><span class="chip">JWT Auth</span><span class="chip">MVC Architecture</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><div class="skill-icon">💻</div><span>IDEs &amp; Tools</span></div>
+          <div class="chips"><span class="chip">VS Code</span><span class="chip">Eclipse</span><span class="chip">Postman</span><span class="chip">MySQL Workbench</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-
-      <!-- Example Project -->
-      <div class="project-card">
-        <img src="https://i.ibb.co/ynnxLKXY/Screenshot-2025-10-27-130056.png" alt="Screenshot-2025-10-27-130056" border="0">
-        <h3>CI/CD with Jenkins & AWS</h3>
-        <p>Automated CI/CD pipeline using Jenkins, Docker, and AWS with security scanning.</p>
-        <a href="https://github.com/Shreyas246a/Solar-system-Jenkins-CICD" target="_blank">GitHub</a>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Projects</div>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-sub">Three hands-on projects that demonstrate my backend depth, full-stack range, and DevOps exposure.</p>
       </div>
+      <div class="projects-list">
 
-      
-      <div class="project-card">
-        <img src="https://i.ibb.co/xKC9n9JH/Screenshot-2024-07-19-234105.png" alt="Travel Journal" border="0">
-        <h3>Travel Journal Web App</h3>
-        <p>A MERN stack web application to document and share travel experiences.</p>
-        <a href="https://github.com/Shreyas246a/TravelJournal" target="_blank">GitHub</a>
-      </div>
-     
-      <div class="project-card">
-   <h2>Check out more projects on my GitHub</h2>
-   <p>Explore my GitHub repository for more projects and collaborations.</p>
-   <a href="https://github.com/Shreyas246a/" target="_blank">GitHub</a>
+        <div class="project-card reveal">
+          <div class="project-left">
+            <div class="project-meta">
+              <span class="project-num">#01</span>
+              <span class="project-badge badge-blue">Backend · Spring Boot</span>
+            </div>
+            <h3 class="project-name">Expense Tracker Backend</h3>
+            <p class="project-desc">A fully-featured RESTful backend for personal finance management. Users can register, log in securely, and perform complete CRUD operations on their expenses — categorised, filtered, and tracked over time. The application uses <strong>Spring Security with JWT tokens</strong> so that every API endpoint is protected and only accessible to authenticated users. A password reset flow was implemented via email, making the app production-ready for real users. The entire codebase follows a clean layered architecture (Controller → Service → Repository) with DTOs for clean data contracts and validation annotations to reject bad input before it reaches business logic. All endpoints were tested thoroughly using Postman.</p>
+            <div class="project-tags">
+              <span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">JWT</span><span class="tag">MySQL</span><span class="tag">REST API</span><span class="tag">Postman</span>
+            </div>
+          </div>
+          <div class="project-right">
+            <a href="https://github.com/Shreyas246a" target="_blank" class="proj-link">GitHub ↗</a>
+          </div>
         </div>
 
-      <!-- Add more project cards here -->
+        <div class="project-card reveal">
+          <div class="project-left">
+            <div class="project-meta">
+              <span class="project-num">#02</span>
+              <span class="project-badge badge-green">Full-Stack · MERN</span>
+            </div>
+            <h3 class="project-name">Travel Journal Web App</h3>
+            <p class="project-desc">A full-stack web application where users can document and revisit their travel experiences. After signing up and logging in, users can create journal entries for each trip — adding destinations, dates, and personal notes. Entries can be edited and deleted, giving users full ownership of their data. The frontend is built in <strong>React</strong>, with a <strong>Node/Express</strong> backend and <strong>MongoDB</strong> storing all journal data as flexible documents. The entire application was <strong>containerised using Docker</strong>, meaning it can be launched on any machine with a single command — no manual environment setup needed. This made the app portable and easy to deploy consistently.</p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Docker</span><span class="tag">Authentication</span>
+            </div>
+          </div>
+          <div class="project-right">
+            <a href="https://github.com/Shreyas246a" target="_blank" class="proj-link">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-left">
+            <div class="project-meta">
+              <span class="project-num">#03</span>
+              <span class="project-badge badge-orange">DevOps · CI/CD</span>
+            </div>
+            <h3 class="project-name">Automated CI/CD Pipeline — Solar System App</h3>
+            <p class="project-desc">Built a fully automated delivery pipeline so that every code change is tested, scanned, packaged, and deployed without any manual steps. When code is pushed to <strong>GitHub</strong>, <strong>Jenkins</strong> (the automation server) automatically picks it up, runs code quality checks via <strong>SonarQube</strong>, scans the Docker image for security vulnerabilities using <strong>Trivy</strong>, and pushes the packaged container to a registry. Deployment to an <strong>AWS EC2</strong> server is handled by <strong>ArgoCD</strong>, which watches the repository and automatically keeps the live server in sync with the latest version. This project gave me practical experience in the full software release lifecycle — from code commit to live deployment.</p>
+            <div class="project-tags">
+              <span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">AWS EC2</span><span class="tag">SonarQube</span><span class="tag">Trivy</span><span class="tag">ArgoCD</span><span class="tag">GitHub</span>
+            </div>
+          </div>
+          <div class="project-right">
+            <a href="https://github.com/Shreyas246a" target="_blank" class="proj-link">GitHub ↗</a>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:shreyas246anchatgeri@gmail.com">shreyas246anchatgeri@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/shreyas246a" target="_blank">github.com/shreyas246a</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/shreyas-anchatageri-87952b2a5" target="_blank">linkedin.com/in/shreyas-anchatageri-87952b2a5</a></p>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="bg-surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="eyebrow">Experience &amp; Education</div>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">July 2025 – Present</div>
+            <h3 class="timeline-title">Full Stack Training</h3>
+            <div class="timeline-org">KodNest, Bengaluru</div>
+            <p class="timeline-desc">Intensive hands-on training focused on real-world backend and microservices projects using Java, Spring Boot, and modern web technologies. Working on production-style codebases with industry best practices.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Sep 2024 – Feb 2025</div>
+            <h3 class="timeline-title">AI-DevOps Intern</h3>
+            <div class="timeline-org">Rooman Technologies (Remote)</div>
+            <p class="timeline-desc">Worked on containerisation with Docker, build automation with Jenkins, container orchestration with Kubernetes, and end-to-end CI/CD pipeline automation. Gained practical exposure to deploying applications on cloud infrastructure.</p>
+            <a href="#" class="timeline-cert">View Certificate ↗</a>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Graduated May 2025</div>
+            <h3 class="timeline-title">B.E. in Computer Science</h3>
+            <div class="timeline-org">Jain College of Engineering &amp; Technology, Hubballi</div>
+            <p class="timeline-desc">Graduated with a CGPA of 8.6. Strong foundation in data structures, algorithms, object-oriented programming, operating systems, and database management systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-section reveal">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <div><div class="cert-name">AI-DevOps Engineer Internship</div><div class="cert-org">Rooman Technologies Pvt. Ltd.</div></div>
+            <a href="#" class="cert-link">View ↗</a>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <div><div class="cert-name">Java with System Design</div><div class="cert-org">Physics Wallah</div></div>
+            <a href="#" class="cert-link">View ↗</a>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🏅</div>
+            <div><div class="cert-name">Web Developer Bootcamp (MERN)</div><div class="cert-org">Online Certification</div></div>
+            <a href="#" class="cert-link">View ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- CONTACT -->
+  <section id="contact" class="bg-dark">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-left">
+          <div class="eyebrow light reveal">Contact</div>
+          <h2 class="section-title light reveal">Let's work<br /><em>together.</em></h2>
+          <p class="section-sub light reveal">Open to full-time roles, internships, and collaborative projects. I typically respond within 24 hours.</p>
+          <div class="contact-channels reveal">
+            <a href="mailto:shreyas246anchatgeri@gmail.com" class="channel">
+              <div class="ch-icon">✉️</div>
+              <div><div class="ch-label">Email</div><div class="ch-val">shreyas246anchatgeri@gmail.com</div></div>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="tel:+919035393014" class="channel">
+              <div class="ch-icon">📞</div>
+              <div><div class="ch-label">Phone</div><div class="ch-val">+91 90353 93014</div></div>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="https://github.com/Shreyas246a" target="_blank" class="channel">
+              <div class="ch-icon">⌥</div>
+              <div><div class="ch-label">GitHub</div><div class="ch-val">github.com/Shreyas246a</div></div>
+              <span class="ch-arrow">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shreyas-anchatageri" target="_blank" class="channel">
+              <div class="ch-icon" style="font-weight:700;font-size:13px;">in</div>
+              <div><div class="ch-label">LinkedIn</div><div class="ch-val">Shreyas Anchatageri</div></div>
+              <span class="ch-arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-input" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" placeholder="you@company.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-input" placeholder="Job opportunity / Project / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-input" rows="5" placeholder="Tell me about the role or project..."></textarea>
+          </div>
+          <button class="btn-send" id="sendBtn">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>© 2025 Shreyas. All rights reserved.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Shreyas Anchatageri</div>
+      <div class="footer-text">© 2026 · Built with care · Hubballi, Karnataka</div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
